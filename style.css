@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Bytesized;
+  src: url(fonts/Bytesized-Regular.ttf);
+}
+
+@font-face {
+  font-family: Jersey;
+  src: url(fonts/Jersey10-Regular.ttf);
+}
+
+@font-face {
+  font-family: Micro;
+  src: url(fonts/Micro5-Regular.ttf);
+}
+
+@font-face {
+  font-family: Tiny;
+  src: url(fonts/Tiny5-Regular.ttf);
+}
+
+body {
+  background-color: #fff5e6;
+}
+
+.head {
+  background-color: #ffb3d9;
+  padding: 1%;
+  margin: 1.5%;
+  border: 6px solid black;
+  border-radius: 30px;
+  box-shadow: 6px 6px black;
+  transition: all 0.5s;
+}
+
+.head:hover {
+  background-color: #ffc9e6;
+  transform: translateY(-10px);
+  box-shadow: 16px 16px black;
+  transition: all 0.5s;
+}
+
+.head h1 {
+  text-align: center;
+  color: white;
+  font-family: Tiny;
+  font-size: 2.4em;
+  font-weight: 900;
+  text-shadow: 4px 4px #2c2c2c;
+}
+
+.head .capital1 {
+  font-size: 1.4em;
+}
+
+.head .capital2 {
+  font-size: 1.3em;
+}
+
+.head h3 {
+  text-align: center;
+  color: white;
+  font-family: Micro;
+  font-size: 1.4em;
+  font-weight: 100;
+  text-shadow: 2px 2px #2c2c2c;
+}
+
+.container {
+  background-color: #fff9c4;
+  margin: 2%;
+  height: 30em;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 8px #2c2c2c;
+  transition: all 0.5s;
+  gap: 5%;
+  padding: 2%;
+  border-radius: 50px;
+  border: 10px solid #000000;
+  justify-content: center;
+  min-width: fit-content;
+  min-height: fit-content;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  transition: all 0.5s;
+  box-shadow: 0px 13px #2c2c2c;
+  border: 5px 5px #2c2c2c solid;
+}
+
+.mode {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  gap: 3%;
+  min-width: fit-content;
+  min-height: fit-content;
+  background-color: #c4e3ff;
+  padding: 1%;
+  border-radius: 25px;
+  border: 4px #000000 solid;
+  box-shadow: -5px 5px #2c2c2c;
+  transition: all 0.4s;
+  align-items: center;
+}
+
+.mode:hover {
+  box-shadow: -10px 10px #2c2c2c;
+  transform: translateY(-5px);
+  transition: all 0.4s;
+}
+
+.mode label {
+  text-align: center;
+  color: white;
+  font-family: jersey;
+  font-size: 4em;
+  font-weight: 500;
+  text-shadow: 3px 3px black;
+}
+
+.mode button {
+  font-family: micro;
+  font-size: 1.4em;
+}
+
+.b1 {
+  background-color: #ff8ba0;
+  width: fit-content;
+  padding: 2%;
+  color: white;
+  border: #000000 solid 5px;
+  border-radius: 30px;
+  box-shadow: 0px 5px black;
+  transition: all 0.3s;
+  text-shadow: 2px 2px black;
+}
+
+.b1:hover {
+  background-color: #ffa3b5;
+  transform: translateY(-5px);
+  transition: all 0.3s;
+  box-shadow: 0px 10px black;
+  cursor: pointer;
+}
+
+.b1:active {
+  background-color: #fc7a92;
+  transform: translateY(5px);
+  transition: all 0.3s;
+  box-shadow: 0px 3px black;
+}
+
+.b2 {
+  background-color: #b8e994;
+  width: fit-content;
+  padding: 2%;
+  color: white;
+  border: #000000 solid 5px;
+  border-radius: 30px;
+  box-shadow: 0px 5px black;
+  transition: all 0.3s;
+  text-shadow: 2px 2px black;
+}
+
+.b2:hover {
+  background-color: #c9f0ab;
+  transform: translateY(-5px);
+  transition: all 0.3s;
+  box-shadow: 0px 10px black;
+  cursor: pointer;
+}
+
+.b2:active {
+  background-color: #a0e270;
+  transform: translateY(5px);
+  transition: all 0.3s;
+  box-shadow: 0px 3px black;
+}
+
+.b3 {
+  background-color: #ffd666;
+  width: fit-content;
+  padding: 2%;
+  color: #2c2c2c;
+  border: #000000 solid 5px;
+  border-radius: 30px;
+  box-shadow: 0px 5px black;
+  transition: all 0.3s;
+  text-shadow: 2px 2px white;
+}
+
+.b3:hover {
+  background-color: #ffe299;
+  transform: translateY(-5px);
+  transition: all 0.3s;
+  box-shadow: 0px 10px black;
+  cursor: pointer;
+}
+
+.b3:active {
+  background-color: #fbce51;
+  transform: translateY(5px);
+  transition: all 0.3s;
+  box-shadow: 0px 3px black;
+}
+.board {
+  background-color: #ffe8f0;
+  padding: 1.8%;
+  gap: 3%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s;
+  border: 4px #000000 solid;
+  box-shadow: 5px 5px #2c2c2c;
+  border-radius: 25px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  align-items: center;
+}
+
+.board:hover {
+  box-shadow: 10px 10px #2c2c2c;
+  transform: translateY(-5px);
+  transition: all 0.4s;
+}
+
+#boardlabel {
+  text-align: center;
+  color: white;
+  font-family: jersey;
+  font-size: 4em;
+  font-weight: 500;
+  text-shadow: 3px 3px black;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-content: center;
+}
+
+.column div {
+  background-color: #ffffff;
+  width: 5em;
+  height: 5em;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.column div:hover {
+  background-color: #fff9e6;
+  transition: all 0.4s;
+}
+
+#b1 {
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+}
+#b2 {
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+}
+#b3 {
+  border-bottom: 4px solid black;
+}
+#b4 {
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+}
+#b5 {
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+}
+#b6 {
+  border-bottom: 4px solid black;
+}
+#b7 {
+  border-right: 4px solid black;
+}
+#b8 {
+  border-right: 4px solid black;
+}
+
+.column label {
+  text-align: center;
+  font-family: tiny;
+  font-size: 3em;
+}
+
+.board button {
+  background-color: #7dda7d;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  padding: 0.9%;
+  box-shadow: 0px 4px black;
+  transition: all 0.3s;
+  text-shadow: 2px 2px black;
+  font-family: micro;
+  font-size: 1.4em;
+  border-radius: 30px;
+  border: 4px solid black;
+}
+
+.board button:hover {
+  background-color: #95e695;
+  transform: translateY(-4px);
+  transition: all 0.3s;
+  box-shadow: 0px 8px black;
+  cursor: pointer;
+}
+
+.board button:active {
+  background-color: #63ca63;
+  transform: translateY(4px);
+  transition: all 0.3s;
+  box-shadow: 0px 2px black;
+}
+
+.gameinfo {
+  margin: 2%;
+  background-color: #e8d5ff;
+  padding: 2%;
+  border-radius: 30px;
+  border: 4px black solid;
+  box-shadow: 0px 5px #2c2c2c;
+  transition: all 0.4s;
+}
+
+.gameinfo:hover {
+  background-color: #e3d6f3;
+  box-shadow: 0px 9px #2c2c2c;
+  transition: all 0.5s;
+  transform: translateY(-4px);
+}
+
+.gameinfo h4 {
+  font-family: jersey;
+  font-weight: 100;
+  font-size: 2.4em;
+  color: #2c2c2c;
+}
+
+.gameinfo h6 {
+  font-family: jersey;
+  font-size: 1.7em;
+  color: #2c2c2c;
+  font-weight: 100;
+}
+
+.credits {
+  display: flex;
+  justify-content: right;
+  margin: 2%;
+  background-color: #ffb3d9;
+  box-shadow:
+    2px 2px #2c2c2c,
+    4px 4px #2c2c2c,
+    6px 6px #2c2c2c;
+  transition: all 0.3s;
+}
+
+.credits:hover {
+  box-shadow:
+    2px 2px #2c2c2c,
+    4px 4px #2c2c2c,
+    6px 6px #2c2c2c,
+    8px 8px #2c2c2c,
+    10px 10px #2c2c2c;
+  transform: translateY(-4px);
+  transition: all 0.3s;
+}
+
+.credits div {
+  background-color: #ffb3d9;
+  padding: 1%;
+}
+
+.credits label {
+  color: white;
+  font-family: Jersey;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-shadow: 1.5px 1.5px #36454f;
+}
+
+.credits div:hover {
+  background-color: #ffc9e6;
+}
+
+.credits div:hover label {
+  background-color: #ffc9e6;
+  color: #36454f;
+  text-shadow: 1.5px 1.5px rgb(255, 255, 255);
+}
+
+.gameinfo p {
+  font-family: Jersey;
+  font-size: 1.2em;
+  color: #2c2c2c;
+  font-weight: 100;
+  text-align: left;
+}

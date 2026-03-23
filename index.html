@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="head">
+      <h1>
+        <span class="capital1">T</span>IC <span class="capital1">T</span>AC
+        <span class="capital1">T</span>OE
+      </h1>
+      <h3>
+        <span class="capital2">P</span>ASS <span class="capital2">A</span>ND
+        <span class="capital2">P</span>LAY,
+        <span class="capital2">A</span>GAINST
+        <span class="capital2">C</span>OMPUTER,
+        <span class="capital2">M</span>ULTIPLAYER
+      </h3>
+    </header>
+
+    <div class="container">
+      <div class="mode">
+        <label>MODE SELECTOR</label>
+        <button class="b1" id="passplay">PASS AND PLAY</button>
+        <button class="b2" id="easyai">EASY AI</button>
+        <button class="b3" id="mediumai">MEDIUM AI</button>
+      </div>
+      <div class="board">
+        <label id="boardlabel">TIC-TAC-TOE BOARD</label>
+        <div class="boxes">
+          <div class="column">
+            <div id="b1"><label id="l1">X</label></div>
+            <div id="b2"><label id="l2">O</label></div>
+            <div id="b3"><label id="l3">X</label></div>
+          </div>
+          <div class="column">
+            <div id="b4"><label id="l4">O</label></div>
+            <div id="b5"><label id="l5">X</label></div>
+            <div id="b6"><label id="l6">O</label></div>
+          </div>
+          <div class="column">
+            <div id="b7"><label id="l7">X</label></div>
+            <div id="b8"><label id="l8">O</label></div>
+            <div id="b9"><label id="l9">X</label></div>
+          </div>
+        </div>
+        <button id="newgame">NEW GAME</button>
+      </div>
+    </div>
+
+    <div class="gameinfo">
+      <h4 id="turn">PLAYER X'S TURN</h4>
+      <h6>
+        SCORE :- X : <span id="Xscore">3</span> | O :
+        <span id="Oscore">2</span> | Draws : <span id="tiescore">1</span>
+      </h6>
+      <p>
+        Click on the GameMode You want to Play. After the Game is Over, Click on
+        the New Game Button to Start a New Game, Then select the GameMode. The
+        Scoreboard will Keep Track of Your Wins, Losses and Draws.
+      </p>
+    </div>
+
+    <footer class="credits">
+      <div><label>MADE BY SOHEB</label></div>
+      <div><label>MARCH 2026</label></div>
+    </footer>
+
+    <script src="index.js" defer></script>
+  </body>
+</html>
